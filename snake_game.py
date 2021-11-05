@@ -20,7 +20,7 @@ y_control = 0
 
 x_apple = randint(40, 600)
 y_apple = randint(50, 430)
-points = 0
+score = 0
 letter1 = pygame.font.SysFont('gabriola', 40, True, False)
 
 screen = pygame.display.set_mode((width, height))
@@ -37,9 +37,9 @@ def increase_snake(list_snake):
         pygame.draw.rect(screen, (173,216,230), (XandY[0], XandY[1], 20, 20))
 
 def restart_game():
-    global points, initial_length, x_snake, y_snake, \
+    global score, initial_length, x_snake, y_snake, \
         list_snake, list_head, x_apple, y_apple, dead
-    points = 0
+    score = 0
     initial_length = 5
     x_snake = int((width / 2 - 20))
     y_snake = int(height / 2)
@@ -52,7 +52,7 @@ def restart_game():
 while True:
     clock.tick(70)
     screen.fill((25,25,112))
-    message = f'Points: {points}'
+    message = f'Score: {score}'
     formatted_text = letter1.render(message, False, (173,216,230))
     for event in pygame.event.get():
         if event.type == QUIT:
@@ -95,7 +95,7 @@ while True:
     if snake.colliderect(apple):
         x_apple = randint(40, 600)
         y_apple = randint(50, 430)
-        points += 1
+        score += 1
         crash_sound.play()
         initial_length += 1;
 
