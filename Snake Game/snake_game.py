@@ -110,13 +110,13 @@ while True:
     # game over
     if list_snake.count(list_head) > 1:
         letter2 = pygame.font.SysFont('arial', 25, True, True)
-        message = 'Game Over! Press R to play again'
-        formatted_text = letter2.render(message, True, (173,216,230))
+        message = 'GAME OVER! Press R to play again'
+        formatted_text = letter2.render(message, True, (25,25,112))
         rect_text = formatted_text.get_rect()
 
         dead = True
         while dead:
-            screen.fill((25,25,112))
+            screen.fill((173,216,230))
             for event in pygame.event.get():
                 if event.type == QUIT:
                     pygame.quit()
