@@ -15,5 +15,5 @@
 - ## Simple War Game
   Reference: [Tech With Tim](https://www.youtube.com/watch?v=jO6qQDNa2UY)
   <div align="center">
-  <img src="https://user-images.githubusercontent.com/78126288/143789958-a84c4d7b-b67e-49d5-83f3-0d858e2ff688.png" width="300px" />
+  <img src="https://user-images.githubusercontent.com/78126288/143790718-e5eea3bd-08e1-4623-af89-75989fa970b2.png" width="300px" />
   </div>
