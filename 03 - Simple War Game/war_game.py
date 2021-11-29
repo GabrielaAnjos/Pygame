@@ -56,8 +56,8 @@ def draw_window(red, yellow, red_bullets, yellow_bullets, red_health, yellow_hea
     yellow_tip = TIP_FONT.render("W, S, A, D, space", 1, WHITE)
     WIN.blit(yellow_tip, (WIDTH - yellow_tip.get_width() - 570, HEIGHT - 50))
 
-    WIN.blit(RED_SPACESHIP, (red.x, (HEIGHT // 2) - 20))
-    WIN.blit(YELLOW_SPACESHIP, (yellow.x, (HEIGHT // 2) - 20))
+    WIN.blit(RED_SPACESHIP, (red.x, red.y))
+    WIN.blit(YELLOW_SPACESHIP, (yellow.x, yellow.y))
 
     for bullet in red_bullets:
         pygame.draw.rect(WIN, RED, bullet)
